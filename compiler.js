@@ -147,7 +147,14 @@ function compile (input) {
     for (var i = 0; i < selectors.length; i++) {
       var selector = selectors[i];
 
+      console.dir(selector);
 
+      var possibilities = cartesian(
+        [selector.type], 
+        ["", selector.id]
+      );
+
+      console.dir(possibilities);
     }
   }
   

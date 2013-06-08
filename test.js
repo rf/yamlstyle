@@ -149,6 +149,7 @@ describe('compiler', function () {
   it('handles type', function () {
     var yaml = YAML.readFileSync("test.yaml", "utf8");
     //console.dir(yaml);
+    compiler(yaml[0]);
   });
 });
 
@@ -171,3 +172,4 @@ describe('tokenizer', function () {
     assert.deepEqual(t(str), {type: "ident", str: "type"});
   });
 });
+
