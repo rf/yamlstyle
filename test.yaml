@@ -1,0 +1,18 @@
+"Label, Button":
+  $tablet:
+    color: blue
+    $android:
+      color: red
+      top: 10
+
+    $ios:
+      top: 80
+
+  $tablet and android:
+    top: 50
+
+"Label#primary":
+  left: 10
+
+"Button.foo.bar":
+  top: 30
